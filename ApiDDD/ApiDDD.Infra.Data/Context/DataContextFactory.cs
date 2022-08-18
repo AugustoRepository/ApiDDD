@@ -17,7 +17,8 @@ namespace ApiDDD.Infra.Data.Context
             configurationBuilder.AddJsonFile(path, false);
 
             var root = configurationBuilder.Build();
-            var connectionString = root.GetSection("ConnectionStrings").GetSection("ApiDDD").Value;
+            var connectionString = root.GetSection("ConnectionStrings")
+                .GetSection("DbDDD").Value;
 
             var builder = new DbContextOptionsBuilder<DataContext>();
             builder.UseSqlServer(connectionString);

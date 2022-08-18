@@ -1,0 +1,10 @@
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\bin\Debug\netcoreapp3.1\ApiDDD.Domain.deps.json
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\bin\Debug\netcoreapp3.1\ApiDDD.Domain.dll
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\bin\Debug\netcoreapp3.1\ApiDDD.Domain.pdb
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\obj\Debug\netcoreapp3.1\ApiDDD.Domain.csproj.AssemblyReference.cache
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\obj\Debug\netcoreapp3.1\ApiDDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\obj\Debug\netcoreapp3.1\ApiDDD.Domain.AssemblyInfoInputs.cache
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\obj\Debug\netcoreapp3.1\ApiDDD.Domain.AssemblyInfo.cs
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\obj\Debug\netcoreapp3.1\ApiDDD.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\obj\Debug\netcoreapp3.1\ApiDDD.Domain.dll
+D:\Projetos c#\ApiDDD\ApiDDD\ApiDDD.Domain\obj\Debug\netcoreapp3.1\ApiDDD.Domain.pdb
