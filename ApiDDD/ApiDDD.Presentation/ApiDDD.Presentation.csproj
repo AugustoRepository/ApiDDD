@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.28" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiDDD.Application\ApiDDD.Application.csproj" />
+    <ProjectReference Include="..\ApiDDD.Infra.Data\ApiDDD.Infra.Data.csproj" />
   </ItemGroup>
 
 

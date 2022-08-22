@@ -3,6 +3,7 @@ using ApiDDD.Domain.Entities;
 using ApiDDD.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ApiDDD.Infra.Data.Repositories
@@ -17,7 +18,7 @@ namespace ApiDDD.Infra.Data.Repositories
 
         public Professor ObeterPorCpf(string cpf)
         {
-            throw new NotImplementedException();
+            return dataContext.Professor.FirstOrDefault(p => p.Cpf.Equals(cpf));
         }
     }
 }

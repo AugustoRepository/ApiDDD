@@ -1,3 +1,4 @@
+using ApiDDD.Presentation.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,15 @@ namespace ApiDDD.Presentation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            SwaggerConfiguration.ConfigurationServices(services);
+
+            EntityFrameworkConfiguration.ConfigurationServices(services, Configuration);
+
+            DependencyInjectionConfigurartion.ConfigurationServices(services);
+
+            JwtConfiguration.ConfigureServices(services, Configuration);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +49,10 @@ namespace ApiDDD.Presentation
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            JwtConfiguration.Configure(app);
+
+            SwaggerConfiguration.Configure(app);
 
             app.UseAuthorization();
 

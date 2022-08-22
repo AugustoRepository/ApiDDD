@@ -1,16 +1,16 @@
 ﻿using ApiDDD.Domain.Contracts.Repositories;
+using ApiDDD.Domain.Contracts.Services;
 using ApiDDD.Domain.Entities;
-using ApiDDD.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApiDDD.Infra.Data.Repositories
+namespace ApiDDD.Domain.Services
 {
-    public class TurmaRepository : BaseRepository<Turma>, ITurmaRepository
+    public class TurmaDomainService : BaseDomainService<Turma>, ITurmaDomainService
     {
         private readonly ITurmaRepository turmaRepository;
-        public TurmaRepository(DataContext dataContext) : base(dataContext)
+        public TurmaDomainService(ITurmaRepository turmaRepository) : base(turmaRepository)
         {
             this.turmaRepository = turmaRepository;
         }

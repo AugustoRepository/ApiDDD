@@ -19,6 +19,16 @@ namespace ApiDDD.Domain.Services
         public Usuario Authenticate(string email, string senha)
         {
             var usuario = usuarioRepository.GetEmailAndSenha(email , senha);
+            #region verificar se o usuario foi encontrado
+            if (usuario != null)
+            {
+                return usuario;
+            }
+            else
+            {
+                throw new Exception("Acesso negado. Usuario nao encontrado.");
+            }
+            #endregion
         }
 
         public override void Inserir(Usuario obj)
