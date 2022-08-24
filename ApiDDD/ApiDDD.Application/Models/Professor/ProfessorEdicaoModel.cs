@@ -11,7 +11,7 @@ namespace ApiDDD.Application.Models.Professor
         public Guid Id { get; set; }
 
         [MinLength(6, ErrorMessage ="informe no minimo {1} caracteres")]
-        [MaxLength(6, ErrorMessage ="informe no minimo {1} caracteres")]
+        [MaxLength(150, ErrorMessage ="informe no maximo {1} caracteres")]
         [Required(ErrorMessage = "infomre o id do professore")]
         public string Nome { get; set; }
     }

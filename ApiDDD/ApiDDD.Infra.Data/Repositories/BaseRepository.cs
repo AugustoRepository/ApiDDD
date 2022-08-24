@@ -17,30 +17,30 @@ namespace ApiDDD.Infra.Data.Repositories
             this.dataContext = dataContext;
         }
 
-        public void Alterar(T entity)
+        public virtual void Alterar(T entity)
         {
             dataContext.Entry(entity).State = EntityState.Modified;
             dataContext.SaveChanges();
         }
 
-        public void Excluir(T entity)
+        public virtual void Excluir(T entity)
         {
             dataContext.Entry(entity).State = EntityState.Deleted;
             dataContext.SaveChanges();
         }
 
-        public void Inserir(T entity)
+        public virtual void Inserir(T entity)
         {
             dataContext.Entry(entity).State = EntityState.Added;
             dataContext.SaveChanges();
         }
 
-        public T ObterPorId(Guid id)
+        public virtual T ObterPorId(Guid id)
         {
-            return dataContext.Set<T>().Find();
+            return dataContext.Set<T>().Find(new object[] { id });
         }
 
-        public List<T> ObterTodos()
+        public virtual List<T> ObterTodos()
         {
             return dataContext.Set<T>().ToList();
         }

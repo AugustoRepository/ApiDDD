@@ -15,7 +15,7 @@ namespace ApiDDD.Application.Models.Turma
         [MaxLength(50, ErrorMessage = "Informe no minimo {1} caracteres")]
         [MinLength(3, ErrorMessage = "Informe no minimo {1} caracteres")]
         [Required(ErrorMessage = "Informe o matricula do aluno")]
-        public string C { get; set; }
+        public string Periodo { get; set; }
 
        
         [Required(ErrorMessage = "Informe o Email do aluno")]

@@ -39,7 +39,7 @@ namespace ApiDDD.Presentation.Controllers
             try
             {
                 alunoApplicationServices.Alterar(model);
-                return Ok("Aluno cadastrado com sucesso");
+                return Ok("Aluno alterado com sucesso");
             }
             catch (Exception e)
             {
@@ -54,7 +54,7 @@ namespace ApiDDD.Presentation.Controllers
             try
             {
                 alunoApplicationServices.Excluir(id);
-                return Ok("Aluno cadastrado com sucesso");
+                return Ok("Aluno deletado com sucesso");
             }
             catch (Exception e)
             {

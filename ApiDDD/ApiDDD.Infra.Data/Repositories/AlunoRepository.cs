@@ -14,7 +14,7 @@ namespace ApiDDD.Infra.Data.Repositories
 
         public AlunoRepository(DataContext dataContext) :base(dataContext)
         {
-
+            this.dataContext = dataContext; 
         }
         public Aluno ObterPorEmail(string email)
         {

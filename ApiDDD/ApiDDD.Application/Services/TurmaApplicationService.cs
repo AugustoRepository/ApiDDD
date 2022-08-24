@@ -43,6 +43,7 @@ namespace ApiDDD.Application.Services
             {
                 Id = Guid.NewGuid(),
                 Nome = model.Nome,
+                Periodo = model.Periodo,
                 DataInicio = DateTime.Parse(model.DataInicio),
                 DataTermino = DateTime.Parse(model.DataTermino),
                 IdProfessor = Guid.Parse(model.IdProfessor),

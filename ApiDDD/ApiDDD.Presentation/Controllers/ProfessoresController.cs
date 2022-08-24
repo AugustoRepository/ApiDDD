@@ -25,7 +25,7 @@ namespace ApiDDD.Presentation.Controllers
             try
             {
                 professorApplicationServices.Inserir(model);
-                return Ok("Professor inserido com sucesso.");
+                return Ok("Professor cadastrado com sucesso.");
             }
             catch (Exception e)
             {
@@ -62,7 +62,7 @@ namespace ApiDDD.Presentation.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll(ProfessorEdicaoModel model)
+        public IActionResult GetAll()
         {
             try
             {

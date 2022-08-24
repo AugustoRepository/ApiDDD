@@ -24,6 +24,11 @@ namespace ApiDDD.Infra.Data.Mappings
                 .HasMaxLength(150)
                 .IsRequired();
 
+            builder.Property(a => a.Matricula)
+               .HasColumnName("MATRICULA")
+               .HasMaxLength(20)
+               .IsRequired();
+
             builder.Property(a => a.Email)
                 .HasColumnName("EMAIL")
                 .HasMaxLength(150)
